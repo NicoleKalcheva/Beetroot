@@ -5,9 +5,7 @@ header .logo_link {
   width: 187px;
   height: 32px;
 }
-header .logo_link,
-header .navigation,
-header .header_action {
+header .logo_link, header .navigation, header .header_action {
   display: inline-block;
   vertical-align: middle;
 }
