@@ -1,0 +1,31 @@
+
+@mixin button-styles($bg-color, $font-color, $border-color: null) {
+    background-color: $bg-color;
+    color: $font-color;
+    padding: 11px 25px;
+    font-size: 16px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+    border: 1px solid $border-color; 
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@mixin container($max-width: 1126px, $padding: 0) {
+    max-width: $max-width;
+    width: 90%;
+    margin: 0 auto;
+    padding: $padding;
+}
+
+@mixin text-style($font-size, $line-height, $color) {
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+}

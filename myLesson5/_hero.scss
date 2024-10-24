@@ -1,0 +1,77 @@
+
+@import 'variables';
+@import 'mixin'; 
+.hero {
+    font-size: 0;
+    padding-top: 30px;
+
+    .col {
+        display: inline-block;
+        vertical-align: middle;
+
+        &:first-child {
+            width: 45%;
+        }
+
+        &:last-child {
+            width: 55%;
+        }
+    }
+
+    .hero_title {
+        @include text-style(44px, 54px, $title-color);
+        margin-bottom: 30px;
+    }
+
+    .hero_description {
+        @include text-style(18px, 28px, $description-color);
+        width: 100%;
+        max-width: 450px;
+        padding-left: 10px;
+    }
+
+    .hero_img {
+        max-width: 605px;
+        width: 100%;
+    }
+
+    .hero_action {
+        width: 100%;
+        padding-left: 10px;
+
+        .hero_button {
+            @include button-styles($action-color, $white-color, $action-color);
+            width: 175px;
+            height: 53px;
+
+            &:hover {
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        .watch {
+            width: 60%;
+            height: 23px;
+            text-align: left;
+            margin-left: 25px;
+
+            &:hover {
+                transition: all 0.3s ease;
+                transform: scale(1.03);
+            }
+        }
+
+        .play {
+            display: inline-block;
+            position: relative;
+            top: 2px;
+        }
+
+        .hero_link {
+            display: inline-block;
+            @include text-style(16px, 23px, $action-color);
+            text-decoration: underline;
+            margin-left: 10px;
+        }
+    }
+}

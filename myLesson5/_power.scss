@@ -1,0 +1,77 @@
+@import 'variables';
+@import 'mixin';
+
+.power {
+    font-size: 0;
+    padding-top: 35px;
+
+    .pow_col {
+        display: inline-block;
+        width: 100%;
+        vertical-align: middle;
+        text-align: center;
+
+        &:first-child {
+            width: 45%;
+        }
+
+        &:last-child {
+            width: 55%;
+        }
+    }
+
+    .power_title {
+        @include text-style(36px, 54px, $title-color);
+        max-width: 539px;
+        margin: 0 auto;
+        text-align: center; 
+    }
+
+    .pow_blocks {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 25%;
+        vertical-align: top;
+        max-width: 220px;
+        padding-top: 30px;
+        text-align: left;
+        margin-right: 35px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        .pow_h3 {
+            @include text-style(22px, 33px, $title-color);
+            max-width: 240px;
+            margin-top: 5px;
+            margin: 30px auto 0;
+        }
+
+        .pow_description {
+            @include text-style(16px, 22px, $description-color);
+            max-height: 52px;
+            max-width: 220px;
+            display: inline-block;
+        }
+    }
+
+    .power_action {
+        display: inline-block;
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 100px;
+        margin: 0 auto;
+        text-align: center;
+
+        .pow_button {
+            @include button-styles($action-color, $white-color, $action-color);
+            width: 175px;
+            height: 53px;
+
+            &:hover {
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+}

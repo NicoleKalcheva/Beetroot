@@ -1,0 +1,63 @@
+header {
+  padding: 35px 0 17px;
+}
+header .logo_link {
+  width: 187px;
+  height: 32px;
+}
+header .logo_link,
+header .navigation,
+header .header_action {
+  display: inline-block;
+  vertical-align: middle;
+}
+header .navigation {
+  width: 60%;
+  text-align: right;
+}
+header .navigation .nav_list li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 35px;
+}
+header .navigation .nav_list li:last-child {
+  margin-right: 0;
+}
+header .nav_item:hover {
+  text-decoration: underline;
+}
+header .nav_item:hover .header_buttons {
+  background-color: #FF9900;
+  color: #fff;
+  padding: 11px 25px;
+  font-size: 16px;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 700;
+  border: 1px solid #BCD0E5;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+header .nav_item:hover .header_buttons:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+header .nav_item:hover .header_buttons:last-of-type {
+  background-color: #FF9900;
+  color: #fff;
+  padding: 11px 25px;
+  font-size: 16px;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 700;
+  border: 1px solid #FF9900;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+header .nav_item:hover .header_buttons:last-of-type:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+header .nav_item:hover .header_buttons:first-of-type {
+  margin-right: 14px;
+}

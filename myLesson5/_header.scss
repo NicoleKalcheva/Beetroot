@@ -1,0 +1,52 @@
+
+@import 'variables';
+@import 'mixin'; 
+
+header {
+    padding: 35px 0 17px; 
+
+    .logo_link {
+        width: 187px;
+        height: 32px;
+    }
+
+    .logo_link,
+    .navigation,
+    .header_action {
+        display: inline-block; 
+        vertical-align: middle; 
+    }
+
+    .navigation {
+        width: 60%; 
+        text-align: right; 
+
+        .nav_list {
+            li {
+                display: inline-block; 
+                vertical-align: middle; 
+                margin-right: 35px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .nav_item:hover {
+        text-decoration: underline; 
+
+    .header_buttons {
+        @include button-styles($action-color, $white-color, $header-button-border-color); 
+
+        &:last-of-type {
+            @include button-styles($action-color, $white-color, $action-color); 
+        }
+
+        &:first-of-type {
+            margin-right: 14px; 
+        }
+    }
+}
+}

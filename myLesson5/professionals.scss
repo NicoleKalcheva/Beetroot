@@ -1,0 +1,46 @@
+@import 'variables';
+@import 'mixin';
+
+.professionals {
+    font-size: 0;
+    padding-top: 30px;
+
+    .prof_col {
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+
+        &:first-child {
+            width: 45%;
+        }
+
+        &:last-child {
+            width: 55%;
+        }
+    }
+
+    .prof_title {
+        @include text-style(36px, 54px, $title-color);
+        margin-bottom: 30px;
+    }
+
+    .prof_subtitle {
+        @include text-style(16px, 26px, $title-color);
+    }
+
+    .prof_description {
+        @include text-style(16px, 26px, $description-color);
+        max-width: 486px;
+        margin-bottom: 40px;
+
+        &:first-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    .prof_img {
+        max-width: 520px;
+        width: 100%;
+        margin: 100px 0 0 217px;
+    }
+}

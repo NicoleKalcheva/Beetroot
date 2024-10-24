@@ -1,0 +1,82 @@
+.power {
+  font-size: 0;
+  padding-top: 35px;
+}
+.power .pow_col {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+.power .pow_col:first-child {
+  width: 45%;
+}
+.power .pow_col:last-child {
+  width: 55%;
+}
+.power .power_title {
+  font-size: 36px;
+  line-height: 54px;
+  color: #2F281E;
+  max-width: 539px;
+  margin: 0 auto;
+  text-align: center;
+}
+.power .pow_blocks {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 25%;
+  vertical-align: top;
+  max-width: 220px;
+  padding-top: 30px;
+  text-align: left;
+  margin-right: 35px;
+}
+.power .pow_blocks:last-of-type {
+  margin-right: 0;
+}
+.power .pow_blocks .pow_h3 {
+  font-size: 22px;
+  line-height: 33px;
+  color: #2F281E;
+  max-width: 240px;
+  margin-top: 5px;
+  margin: 30px auto 0;
+}
+.power .pow_blocks .pow_description {
+  font-size: 16px;
+  line-height: 22px;
+  color: #544837;
+  max-height: 52px;
+  max-width: 220px;
+  display: inline-block;
+}
+.power .power_action {
+  display: inline-block;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+.power .power_action .pow_button {
+  background-color: #FF9900;
+  color: #fff;
+  padding: 11px 25px;
+  font-size: 16px;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 700;
+  border: 1px solid #FF9900;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  width: 175px;
+  height: 53px;
+}
+.power .power_action .pow_button:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+.power .power_action .pow_button:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
