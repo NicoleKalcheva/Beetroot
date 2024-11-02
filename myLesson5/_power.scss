@@ -11,12 +11,10 @@
         vertical-align: middle;
         text-align: center;
 
-        &:first-child {
-            width: 45%;
-        }
+        
 
         &:last-child {
-            width: 55%;
+            width: 100%;
         }
     }
 
