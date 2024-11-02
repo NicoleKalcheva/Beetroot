@@ -8,9 +8,6 @@
   vertical-align: middle;
   text-align: center;
 }
-.power .pow_col:last-child {
-  width: 100%;
-}
 .power .power_title {
   font-size: 36px;
   line-height: 54px;
