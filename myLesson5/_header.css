@@ -19,12 +19,9 @@ header .navigation .nav_list li {
   margin-right: 35px;
 }
 header .navigation .nav_list li:last-child {
-  margin-right: 0;
+  margin-right: 0px;
 }
-header .nav_item:hover {
-  text-decoration: underline;
-}
-header .nav_item:hover .header_buttons {
+header .header_buttons {
   background-color: #FF9900;
   color: #fff;
   padding: 11px 25px;
@@ -37,7 +34,7 @@ header .nav_item:hover .header_buttons {
   cursor: pointer;
   transition: box-shadow 0.3s ease;
 }
-header .nav_item:hover .header_buttons:hover {
+header .header_buttons:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 header .header_buttons:last-of-type {
@@ -53,7 +50,7 @@ header .header_buttons:last-of-type {
   cursor: pointer;
   transition: box-shadow 0.3s ease;
 }
-header .nav_item:hover .header_buttons:last-of-type:hover {
+header .header_buttons:last-of-type:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 header .header_buttons:first-of-type {
