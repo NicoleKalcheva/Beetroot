@@ -33,6 +33,36 @@
             margin-right: 0;
         }
 
+        .pow_icon:first-of-type{
+          @include pow-icon-style;
+          display: inline-block;
+          background-color: #7752BE;
+          border: 1px;
+          border-color: #7752BE;
+
+        }
+        .pow_icon:nth-of-type(2){
+            @include pow-icon-style;
+            display: inline-block;
+            background-color: #FAB005;
+            border: 1px;
+            border-color: #FAB005;
+        }
+        .pow_icon:nth-of-type(3){
+            @include pow-icon-style;
+            display: inline-block;
+            background-color: #F03E3D;
+            border: 1px;
+            border-color: #F03E3D;
+        }
+        .pow_icon:last-of-type{
+            @include pow-icon-style;
+            display: inline-block;
+            background-color: #4DADF7;
+            border: 1px;
+            border-color: #4DADF7;
+        }
+
         .pow_h3 {
             @include text-style(22px, 33px, $title-color);
             max-width: 240px;

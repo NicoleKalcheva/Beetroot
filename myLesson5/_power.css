@@ -29,6 +29,42 @@
 .power .pow_blocks:last-of-type {
   margin-right: 0;
 }
+.power .pow_blocks .pow_icon:first-of-type {
+  width: 50px;
+  height: 50px;
+  border-radius: 19px;
+  display: inline-block;
+  background-color: #7752BE;
+  border: 1px;
+  border-color: #7752BE;
+}
+.power .pow_blocks .pow_icon:nth-of-type(2) {
+  width: 50px;
+  height: 50px;
+  border-radius: 19px;
+  display: inline-block;
+  background-color: #FAB005;
+  border: 1px;
+  border-color: #FAB005;
+}
+.power .pow_blocks .pow_icon:nth-of-type(3) {
+  width: 50px;
+  height: 50px;
+  border-radius: 19px;
+  display: inline-block;
+  background-color: #F03E3D;
+  border: 1px;
+  border-color: #F03E3D;
+}
+.power .pow_blocks .pow_icon:last-of-type {
+  width: 50px;
+  height: 50px;
+  border-radius: 19px;
+  display: inline-block;
+  background-color: #4DADF7;
+  border: 1px;
+  border-color: #4DADF7;
+}
 .power .pow_blocks .pow_h3 {
   font-size: 22px;
   line-height: 33px;
