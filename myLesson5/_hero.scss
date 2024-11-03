@@ -68,10 +68,12 @@
         }
 
         .hero_link {
+            font-weight: 550;
             display: inline-block;
             @include text-style(16px, 23px, $action-color);
             text-decoration: underline;
             margin-left: 10px;
+            
         }
     }
 }

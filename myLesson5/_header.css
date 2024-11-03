@@ -40,7 +40,7 @@ header .nav_item:hover .header_buttons {
 header .nav_item:hover .header_buttons:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
-header .nav_item:hover .header_buttons:last-of-type {
+header .header_buttons:last-of-type {
   background-color: #FF9900;
   color: #fff;
   padding: 11px 25px;
@@ -56,6 +56,23 @@ header .nav_item:hover .header_buttons:last-of-type {
 header .nav_item:hover .header_buttons:last-of-type:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
-header .nav_item:hover .header_buttons:first-of-type {
+header .header_buttons:first-of-type {
+  background-color: #fff;
+  color: #173A56;
+  padding: 11px 25px;
+  font-size: 16px;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 700;
+  border: 1px solid #BCD0E5;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
   margin-right: 14px;
+}
+header .header_buttons:first-of-type:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+header .nav_item:hover {
+  text-decoration: underline;
 }
