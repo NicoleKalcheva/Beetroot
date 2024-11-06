@@ -18,7 +18,7 @@ header .navigation .nav_list li {
   vertical-align: middle;
   margin-right: 35px;
 }
-header .navigation .nav_list li:last-child {
+header .navigation .nav_list:last-child {
   margin-right: 0px;
 }
 header .header_buttons {

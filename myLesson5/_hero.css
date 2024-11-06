@@ -60,6 +60,7 @@
   height: 23px;
   text-align: left;
   margin-left: 25px;
+  display: inline-block;
 }
 .hero .hero_action .watch:hover {
   transition: all 0.3s ease;
@@ -71,11 +72,11 @@
   top: 2px;
 }
 .hero .hero_action .hero_link {
-  font-weight: 550;
   display: inline-block;
   font-size: 16px;
   line-height: 23px;
   color: #FF9900;
   text-decoration: underline;
   margin-left: 10px;
+  font-weight: 550;
 }
