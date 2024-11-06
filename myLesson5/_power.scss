@@ -19,34 +19,44 @@
         text-align: center; 
     }
 
-    .pow_icon:first-of-type{
-        @include pow-icon-style;
+    .power .pow_icon:first-of-type {
+        width: 50px;
+        height: 50px;
+        border-radius: 19px;
         display: inline-block;
         background-color: #7752BE;
         border: 1px;
         border-color: #7752BE;
 
       }
-      .pow_icon:nth-of-type(2){
-          @include pow-icon-style;
-          display: inline-block;
-          background-color: #FAB005;
-          border: 1px;
-          border-color: #FAB005;
+      
+      .power .pow_blocks:nth-child(2) .pow_icon  {
+        width: 50px;
+        height: 50px;
+        border-radius: 19px;
+        display: inline-block;
+        background-color: #FAB005;
+        border: 1px;
+        border-color: #FAB005;
+        font-size: 16px;
       }
-      .pow_icon:nth-of-type(3){
-          @include pow-icon-style;
-          display: inline-block;
-          background-color: #F03E3D;
-          border: 1px;
-          border-color: #F03E3D;
+      .power .pow_blocks:nth-child(3) .pow_icon  {
+        width: 50px;
+        height: 50px;
+        border-radius: 19px;
+        display: inline-block;
+        background-color: #F03E3D;
+        border: 1px;
+        border-color: #F03E3D;
       }
-      .pow_icon:last-of-type{
-          @include pow-icon-style;
-          display: inline-block;
-          background-color: #4DADF7;
-          border: 1px;
-          border-color: #4DADF7;
+      .power .pow_icon:last-of-type {
+        width: 50px;
+        height: 50px;
+        border-radius: 19px;
+        display: inline-block;
+        background-color: #4DADF7;
+        border: 1px;
+        border-color: #4DADF7;
       }
 
     .pow_blocks {
