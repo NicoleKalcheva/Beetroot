@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+body{
+    background-color: rgb(250, 157, 203);
+}
+
+.card{
+    width: 840px;
+    height: 500px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right:0;
+    bottom: 0;
+    left: 0;
+    
+   perspective: 1200px; 
+   transition: 1s;
+
+   animation-duration: 1s;
+   animation-name:movement
+}
+
+.inside, .outside{
+    height: 100%;
+    width: 50%;
+    position:absolute;
+    left:50.1%;
+    border:2px solid #140b0b
+}
+.inside{
+    background: linear-gradient(to right, #e7e7e7, #ffffff 40%);
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+
+}
+.outside{
+    transform-style: preserve-3d;
+    z-index: 1;
+    transform-origin: left;
+    transition: 2s;
+    cursor: pointer;
+}
+.front, .back{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+}
+.front {
+    background-color: #e5f793;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    row-gap: 350px;
+    
+  }
+  .back {
+    transform: rotateY(180deg);
+    background: linear-gradient(to left, #e7e7e7, #ffffff 30%);
+  }
+  .outside p {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 6px;
+    color: #044d28;
+  }
+  .inside p {
+    font-size: 20px;
+    line-height: 60px;
+    font-style: italic;
+    
+    
+  }
+  
+  .card:hover {
+    transform: rotate(-5deg);
+  }
+  .card:hover .outside {
+    transform: rotateY(-130deg);
+  }
+ 
+  img{
+    position: absolute;
+    max-height: 200px;
+  }
+  
+
+.getting_older{
+	width: 100%;
+	max-width: 250px;
+	height: 40px;
+	background: rgba(0,0,0,0.2);
+	border-radius: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.inner{
+	text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 5px;
+  
+}
+
+h2{
+    font-size: 13px;
+	text-transform: uppercase;
+	color:#ffffff;
+	
+}
+
+.bar{
+	width: 100%;
+	max-width: 170px;
+	height: 10px;
+	border: 2px solid #fff;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.mainBar{
+	width: 100%;
+	max-width: 0;
+	height: 10px;
+	background: #fff;
+	animation: animate 5s infinite;
+}
+
+@keyframes animate{
+	0%{
+		max-width: 0%;
+	}
+
+	20%{
+		max-width: 20%;
+	}
+
+	90%{
+		max-width: 50%;
+	}
+
+	93%{
+		max-width: 80%;
+	}
+
+	100%{
+		max-width: 100%;
+	}
+}
