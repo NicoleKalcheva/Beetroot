@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Mulish, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav_item {
+  text-decoration: none;
+  padding-left: 30px;
+}
+
+.header_conteiner {
+  width: 100%;
+  max-width: 1440px;
+  height: 36px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  padding: 30px 150px 80px 150px;
+}
+
+.logo {
+  height: 23px;
+}
+
+.nav_list {
+  width: 100%;
+  min-width: 140px;
+  height: 36px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_item {
+  color: #111111;
+  font-weight: 700;
+}
+
+.shooting_stars {
+  padding-left: 150px;
+  padding-bottom: 130px;
+  display: flex;
+}
+
+.stars_content {
+  width: 100%;
+  max-width: 635px;
+}
+
+.stars_title {
+  display: inline-block;
+  color: #4A4FF2;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.stars_paragraph {
+  font-size: 40px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.highlight {
+  color: #4A4FF2;
+}
+
+.progress {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 43%;
+  padding-left: 60px;
+}
+
+.progress_text {
+  color: #707070;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.grid {
+  width: 100%;
+  min-width: 1110px;
+  min-height: 1960px;
+  display: grid;
+  grid-template-columns: 381px 385px 350px;
+  grid-template-rows: 351px 82px 202px 185px 124px 128px 324px 64px 182px 350px;
+}
+
+.picture {
+  background: #ffff;
+  width: 100%;
+}
+.picture:nth-child(1) {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.picture:nth-child(2) {
+  grid-column: 2/span 1;
+  grid-row: 1/span 1;
+}
+.picture:nth-child(3) {
+  grid-column: 3/span 1;
+  grid-row: 1/span 4;
+}
+.picture:nth-child(4) {
+  grid-row: 3/span 2;
+}
+.picture:nth-child(5) {
+  grid-column: 2/span 1;
+  grid-row: 2/span 2;
+}
+.picture:nth-child(6) {
+  grid-column: 3/span 1;
+  grid-row: 4/span 3;
+}
+.picture:nth-child(7) {
+  grid-row: 6/span 3;
+}
+.picture:nth-child(8) {
+  grid-column: 2/span 1;
+  grid-row: 5/span 2;
+}
+.picture:nth-child(9) {
+  grid-column: 3/span 1;
+  grid-row: 7/span 3;
+}
+.picture:nth-child(10) {
+  grid-row: 9/span 2;
+}
+.picture:nth-child(11) {
+  grid-column: 2/span 1;
+  grid-row: 8/span 3;
+}
+.picture:nth-child(12) {
+  grid-column: 3/span 1;
+  grid-row: 10/span 1;
+}
+
+.last_main{
+  padding-top:86px;
+  padding-right: 150px;
+  padding-left: 225px;
+  width: 100%;
+  max-width: 1110px;
+}
+.container1{
+  display: flex;
+  width:100%;
+  max-width: 1110px;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+  border-bottom:2px solid #b7b7b7;
+}
+
+.pharagraph{
+  width: 100%;
+  max-width: 635px;
+}
+.love_work{
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38px;
+}
+.list{
+  width: 100%;
+  max-width:220px;
+  padding-left: 90px;
+  box-sizing: border-box;
+}
+li{
+  
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 33px;
+  color: #707070;
+}
+.container2{
+  display: flex;
+  width:100%;
+  max-width: 1110px;
+  max-height: 426px;
+  flex-wrap: wrap;
+  border-bottom:2px solid #b7b7b7;
+}
+.container3{
+  width: 100%;
+  max-width: 618px;
+  max-height: 426px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border-bottom:2px solid #b7b7b7;
+}
+.title{
+  width: 100%;
+  max-width: 492px;
+  height: 426px;
+  padding-top: 56px;
+  padding-bottom: 180px;
+}
+
+.table{
+  width: 100%;
+  max-width: 618px;
+  max-height: 213px;
+  display: flex;
+
+}
+
+.subtitle{
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 293px;
+  height: 200px;
+  padding-top: 56px;
+ 
+}
+.genesis{
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 320px;
+  padding-right: 133px;
+  padding-bottom: 93px;
+  padding-top: 56px;
+}
+.year{
+  padding-top: 56px;
+}
+.application{
+  color: #707070;
+  line-height: 20px;
+}
+.footer{
+  padding: 30px 150px 80px 225px;
+}
+.footer_conteiner {
+  width: 100%;
+  max-width: 1440px;
+  height: 36px;
+  margin: 0 auto;
+  display: flex;
+ 
+  align-items: center;
+}
+
+.logo {
+  height: 23px;
+  padding-right: 600px;
+}
+
+.icons{
+  padding-left: 137px;
+}
+.figure{
+padding-left: 10px;
+}
+
+
