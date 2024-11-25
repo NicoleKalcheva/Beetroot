@@ -93,6 +93,7 @@ ul {
   min-width: 1110px;
   min-height: 1960px;
   display: grid;
+  justify-content: center;
   grid-template-columns: 381px 385px 350px;
   grid-template-rows: 351px 82px 202px 185px 124px 128px 324px 64px 182px 350px;
 }
