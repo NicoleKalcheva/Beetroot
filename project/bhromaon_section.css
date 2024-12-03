@@ -1,0 +1,38 @@
+.bhromaon {
+  background-image: url(./img/bg_image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  position: relative;
+  min-height: 100vh;
+}
+
+.nav_item {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Aleo", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  right: 0px;
+  background-color: #5474FD;
+}
+.header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header ul li {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400px;
+  font-family: "Aleo";
+}

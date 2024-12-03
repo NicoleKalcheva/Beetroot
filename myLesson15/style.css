@@ -51,6 +51,9 @@
 .header{
   padding: 30px 150px 140px 150px;
   background-color: #F4F6F7;
+  display: flex;
+  box-sizing: border-box;
+
 }
 
 .nav_list{
@@ -82,15 +85,18 @@ align-items:center;
 background-color: #F4F6F7;
 } 
 .main{
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .grow_business{
   width: 100%;
-  max-width:1519.2px;
   max-height: 600px;
   box-sizing: border-box;
   display:flex ;
+  justify-content: center;
   background-color: #F4F6F7;
   padding: 0px 135px 0px 135px;
 
@@ -139,7 +145,6 @@ margin-top: 10px;
 }
 .our_services{
   width: 100%;
-  max-width:1519.2px;
   max-height: 514px;
   padding-top: 115px;
   padding-bottom: 95px;
@@ -224,7 +229,6 @@ margin-top: 10px;
 }
 .some_data{
   width: 100%;
-  max-width:1519.2px;
   max-height: 205px;
   padding-top: 50px;
   padding-bottom: 45px;
@@ -288,7 +292,6 @@ margin-top: 10px;
 }
 .about_us{
   width: 100%;
-  max-width:1519.2px;
   max-height: 514px;
   padding-top: 115px;
   padding-bottom: 95px;
