@@ -6,8 +6,14 @@
 @font-face {
   font-family: "Aleo";
   src: url("./fonts/aleo.regular.otf") format("opentype");
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
+}
+@font-face {
+  font-family: "Aleo";
+  src: url("./fonts/aleo.light.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
 }
 li {
   list-style: none;

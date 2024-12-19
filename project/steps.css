@@ -1,0 +1,77 @@
+.steps {
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  max-height: 340px;
+}
+@media (max-width: 480px) {
+  .steps {
+    min-height: 500px;
+  }
+}
+.steps .shape_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+  max-width: 1175px;
+  padding-top: 45px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  min-height: 340px;
+}
+@media (max-width: 480px) {
+  .steps .shape_container {
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    padding-top: 20px;
+    min-height: 500px;
+  }
+}
+@media (max-width: 480px) {
+  .steps .shape_container .shape_img {
+    display: none;
+  }
+}
+.steps .shape_container .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  gap: 160px;
+  position: absolute;
+  bottom: 30%;
+}
+@media (max-width: 480px) {
+  .steps .shape_container .icons {
+    flex-direction: column;
+    gap: 30px;
+    bottom: 0%;
+  }
+}
+.steps .shape_container .icons .step {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 480px) {
+  .steps .shape_container .icons .step:last-of-type {
+    margin-bottom: 20px;
+  }
+}
+.steps .shape_container .icons .step .h {
+  width: 100%;
+  max-width: 217px;
+  text-align: center;
+  color: #fff;
+  font-family: "Aleo";
+  font-size: 36px;
+  font-weight: 500;
+}

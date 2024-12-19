@@ -1,0 +1,92 @@
+.steps{
+    background:#333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%; 
+    max-height: 340px;
+ 
+    @media (max-width:480px) {
+       min-height: 500px;
+        
+    }
+
+    .shape_container{
+        display: flex;
+        justify-content: center; 
+        align-items: flex-start;
+        position:relative;
+        width: 100%;  
+        max-width: 1175px;
+        padding-top: 45px;
+
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        min-height: 340px;
+
+
+        @media (max-width:480px) {
+            justify-content: center; 
+            align-items: center;
+            max-width: 350px;
+            padding-top: 20px;
+            min-height: 500px; 
+           
+            
+        }
+ 
+
+        .shape_img{
+            @media (max-width:480px) {
+                display: none;
+            }
+        }
+
+ 
+           
+
+        .icons{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 2;
+            gap: 160px;
+            position: absolute;
+            bottom: 30%;
+
+            @media (max-width:480px) {
+                flex-direction: column;
+                gap: 30px; 
+                bottom:0%; 
+            }
+
+             
+
+            .step{ 
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                @media (max-width: 480px) {
+                    &:last-of-type {
+                        margin-bottom: 20px;
+                    }
+                }             
+
+                .h{ 
+                    width: 100%;
+                    max-width: 217px;
+                    text-align: center;
+                    color: #fff;
+                    font-family: 'Aleo';
+                    font-size: 36px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+    }
+}

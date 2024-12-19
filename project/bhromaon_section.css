@@ -19,20 +19,250 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
   position: absolute;
-  top: 100%;
+  top: 88%;
   left: 0px;
   right: 0px;
+  bottom: 0px;
   background-color: #5474FD;
+}
+@media (max-width: 480px) {
+  .header {
+    width: 100vw;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10px;
+    top: 77%;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    width: 100vw;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10px;
+    top: 77%;
+  }
+}
+.header nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 .header ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 40px;
 }
-.header ul li {
+@media (max-width: 480px) {
+  .header ul {
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    gap: 0px;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  .header ul {
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    gap: 0px;
+    flex-wrap: wrap;
+  }
+}
+.header ul li a {
   font-size: 14px;
   line-height: 24px;
-  font-weight: 400px;
   font-family: "Aleo";
+}
+.header ul li :hover {
+  color: #f8e9d5;
+}
+@media (max-width: 480px) {
+  .header ul li {
+    text-align: center;
+    width: 100%;
+    min-height: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .header ul li {
+    text-align: center;
+    width: 100%;
+    min-height: 40px;
+  }
+}
+
+.bhromaon_container {
+  display: flex;
+  width: 100%;
+  max-width: 654px;
+  flex-direction: column;
+  position: relative;
+  top: 10%;
+  left: 50%;
+  gap: 50px;
+  transform: translate(-50%, 50%);
+}
+@media (max-width: 768px) {
+  .bhromaon_container {
+    top: 5%;
+    gap: 20px;
+    max-width: 500px;
+  }
+}
+@media (max-width: 480px) {
+  .bhromaon_container {
+    top: 2%;
+    gap: 100px;
+    max-width: 301px;
+  }
+}
+.bhromaon_container .logo1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bhromaon_container .logo1 .big {
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  font-size: 48px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.bhromaon_container .logo1 .small {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 22px;
+  color: #fff;
+}
+.bhromaon_container .search_form {
+  display: flex;
+  width: 100%;
+  max-width: 653px;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 480px) {
+  .bhromaon_container .search_form {
+    min-width: 140px;
+  }
+}
+.bhromaon_container .field1 {
+  display: flex;
+  width: 100%;
+  max-width: 653px;
+  height: 63px;
+  justify-content: center;
+  align-items: center;
+  min-height: 61px;
+  border: none;
+}
+@media (max-width: 480px) {
+  .bhromaon_container .field1 {
+    flex-direction: column;
+    gap: 30px;
+    max-width: 300px;
+  }
+}
+.bhromaon_container .field1 .field {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  height: 63px;
+  font-family: "Josefin Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+}
+.bhromaon_container .field1 .field :focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+@media (max-width: 480px) {
+  .bhromaon_container .field1 .field {
+    border: none;
+    max-width: 300px;
+    min-height: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .bhromaon_container .field1 .field {
+    border: none;
+    max-width: 300px;
+    min-height: 50px;
+  }
+}
+.bhromaon_container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 153px;
+  min-height: 63px;
+  background-color: #5474FD;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Aleo", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  border-left: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.bhromaon_container button .icon {
+  padding-left: 10px;
+}
+@media (max-width: 480px) {
+  .bhromaon_container button {
+    max-width: 100%;
+    min-height: 50px;
+    border: none;
+  }
+}
+@media (max-width: 768px) {
+  .bhromaon_container button {
+    max-width: 100%;
+    min-height: 50px;
+    border: none;
+  }
+}
+
+button:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  background: #eeaa0e;
+}
+
+.scroll_element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.scroll_element .scroll_link {
+  text-decoration: none;
+}
+.scroll_element .scroll {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
 }
