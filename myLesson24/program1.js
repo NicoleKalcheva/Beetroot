@@ -6,12 +6,12 @@ function nameOfTheFunction(){
 
 //function expression
 
-const nameOfTheFunction  = function() {
+const nameOfTheFunctionn  = function() {
     console.log(arguments);
 }
 
 //IIFE
-(function nameOfTheFunction(){
+(function nameOofTheFunction(){
     console.log("Hello World")
 })()
 
