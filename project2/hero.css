@@ -31,7 +31,7 @@
     align-items: center;
     gap: 60px
 }
-.hero_li a{
+.hero_li {
     display: flex; 
     align-items: center;
     font-family:"Source Sans 3", sans-serif ;
@@ -40,7 +40,7 @@
     color: #fff;
     cursor: pointer;
 }
-.hero_li a:hover .circle{
+.hero_li:hover .circle{
     background-color: #fff; 
 }
 .circle {
@@ -142,7 +142,7 @@ color: #fff;
     display: none;
 }
 
-.hero_carousel .slick-next{
+.hero_carousel.slick-next{
     position: absolute;
     top:200%  !important;
     left: 50% !important;
@@ -174,3 +174,27 @@ color: #fff;
 .slick-track{
    height: 600px !important;
 }  
+
+.slide h2{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    margin-top: 35px;
+    margin-left: 20px;
+    color: #2C4058;
+}
+.carousel_content{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 100px;
+    color: #2C4058;
+}
+.authors img{
+    width: 100%;
+    max-width: 40px;
+    height: 40px;
+    
+}
