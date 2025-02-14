@@ -5,7 +5,7 @@
     background-size: cover;
     /* object-fit: cover; */
     position: relative;
-    min-height: 80vh;
+    
     
 }
 
@@ -61,7 +61,7 @@
 
 }
 
-.news_carousel.slick-prev:before, .news_carousel.slick-next:before {
+.news_carousel .slick-prev:before, .news_carousel .slick-next:before {
     
     content:none !important;
     display: none !important;
