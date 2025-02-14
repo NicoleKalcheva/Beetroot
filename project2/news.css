@@ -5,7 +5,7 @@
     background-size: cover;
     /* object-fit: cover; */
     position: relative;
-    
+
     
 }
 
@@ -86,7 +86,7 @@
     height: 40px !important;
 }
 
-.news_carousel.slick-dots li button:before{
+.news_carousel .slick-dots li button:before{
     content:'' !important;
     color: transparent;
     width: 10px !important;

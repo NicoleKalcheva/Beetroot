@@ -3,11 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Instagram Story Quotes</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            padding: 50px; 
+            background-color: #f4f4f4;
+        }
+        #quote {
+            font-size: 24px; 
+            font-weight: bold;
+            margin: 20px; 
+            color: #333;
+        }
+        button { 
+            padding: 10px 20px; 
+            font-size: 16px; 
+            cursor: pointer; 
+            background-color: #ff6b81;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #ff4757;
+        }
+    </style>
 </head>
 <body>
-    <h2 id="quote">Random quote generator</h2>
-    <button>Click here!</button>
-    <script src="main.js"></script>
+
+    <h1>Instagram Story Quotes</h1>
+    <p id="quote">Tap the button for a new quote!</p>
+    <button onclick="generateQuote()">New Quote</button>
+
+    <script>
+        const quotes = [
+            "Dream big. Work hard. Stay focused. ✨",
+            "Your vibe attracts your tribe. 💫",
+            "Make today so awesome that yesterday gets jealous. 😎",
+            "Happiness looks good on you! 😊💖",
+            "Trust the timing of your life. ⏳🌿"
+        ];
+
+        function generateQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            document.getElementById('quote').innerText = quotes[randomIndex];
+        }
+    </script>
+
 </body>
 </html>

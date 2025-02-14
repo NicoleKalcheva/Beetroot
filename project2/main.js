@@ -23,7 +23,7 @@ $(document).ready(function(){
     arrows: true,
     fade: false,
     speed: 800,
-    nextArrow:'<button type="button" class="slick-next"><img src="./IMG/Arrow.svg" alt=""></button>'
+    
     
    
   }
@@ -63,3 +63,30 @@ $('.news_carousel').slick({
 lightGallery(document.getElementById('lightgallery'), {
   plugins: [lgZoom, lgFullscreen],
 });
+
+
+
+
+document.addEventListener('DOMContentLoaded',() =>{
+  const map = L.map('map').setView([42.497978840198634, 27.477080430134198], 20);
+  L.tileLayer('	https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',).addTo(map);
+
+  const newIcon = L.icon({
+    iconUrl: 'https://www.pinpng.com/pngs/m/310-3104493_create-adaptive-icons-for-ionic-cordova-applications-ionic.png',
+  
+
+    iconSize:     [35, 35], // size of the icon
+    shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+    shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+
+  L.marker([42.497978840198634, 27.477080430134198],{icon: newIcon}).addTo(map)
+    .bindPopup('City Library')
+    .openPopup();
+
+
+})
+

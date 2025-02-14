@@ -6,7 +6,8 @@
     object-fit: cover;
     opacity: 0.80;
     position:relative;
-    min-height: 70vh;
+    
+    
 }
 .hero_section img {
     transform: scale(0.9);
@@ -39,6 +40,16 @@
     font-weight: 100;
     color: #fff;
     cursor: pointer;
+}
+.hero a {
+    display: flex; 
+    align-items: center;
+    font-family:"Source Sans 3", sans-serif ;
+    font-size: 14px;
+    font-weight: 100;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
 }
 .hero_li:hover .circle{
     background-color: #fff; 
@@ -129,7 +140,7 @@ line-height: 80px;
 color: #fff;
 }
 
- .carousel_slide .content_title_sub {
+.hero_carousel .carousel_slide .content_title_sub {
     font-family: 'Montserrat', sans-serif ;
     font-size: 18px;
     font-weight: 300;
@@ -137,22 +148,12 @@ color: #fff;
     }
 
 
-.slick-prev:before, .slick-next:before {
+.hero_carousel .slick-prev:before, .hero_carousel .slick-next:before {
     content:none;
     display: none;
 }
 
-.hero_carousel.slick-next{
-    position: absolute;
-    top:200%  !important;
-    left: 50% !important;
-    right: 0% !important;
-    transform: translate(-50%, 50%) !important;
-}
-.slick-next img{
-    width: 40px;
-    height: 40px;
-}
+
 
 .slick-dots li button:before{
     content:'' !important;
@@ -162,20 +163,23 @@ color: #fff;
     border: 1px solid #fff !important;
     border-radius: 50%;
     box-sizing: border-box !important;
+   
 }
-/* .hero_carousel.slick-dots {
+ .hero_carousel .slick-dots {
     display: flex !important ;
     flex-direction: column !important;
+    gap: 10px!important;
     position: absolute;
-    width: 5% !important;
-    left: 100%; */
+    left: 100%;
+    bottom:40%;
+    width: 10px;
 
-/* } */
-.slick-track{
+ }
+ .hero_carousel .slick-track{
    height: 600px !important;
 }  
 
-.slide h2{
+.hero_carousel .slide h2{
     font-family: 'Montserrat',sans-serif;
     font-weight: 800;
     font-size: 22px;
@@ -191,10 +195,9 @@ color: #fff;
     margin-left: 20px;
     margin-bottom: 100px;
     color: #2C4058;
-/* }
-.authors img{
-    width: 100%;
-    max-width: 40px;
-    height: 40px;
-    
-} */
+}
+.hero_arrow{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+}
